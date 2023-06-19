@@ -456,9 +456,8 @@ img {
 
 .div-foot-icon {}
 
-.div-foot-soc {
-    margin-right: 80px;
-}
+.div-foot-soc {}
+    
 
 .div-foot-content {
     margin-right: 120px;
@@ -483,7 +482,7 @@ img {
 }
 
 .foot-sub-div {
-    
+    margin-left: 80px;
 
 }
 
@@ -517,10 +516,8 @@ img {
     border-radius: 4px;
     background-color: transparent;
     color: var(--whitty-color);
-    padding-left: 16px;
+    padding-left: 16px; 
     
-    
-
 }
 
 .foot-mail-input::placeholder {
@@ -933,7 +930,7 @@ img {
 
 .check-txt {
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--gray-color);
     
@@ -955,7 +952,7 @@ img {
 }
 
 .check:checked + .check-txt > .check-span {
-    background-color: var(--simple-color);
+    background-color: var(--active-color);
     border: none;
     fill: var(--darwhit-color);
 }

@@ -456,7 +456,9 @@ img {
 
 .div-foot-icon {}
 
-.div-foot-soc {}
+.div-foot-soc {
+    margin-right: 80px;
+}
 
 .div-foot-content {
     margin-right: 120px;
@@ -481,7 +483,7 @@ img {
 }
 
 .foot-sub-div {
-    margin-left: 80px;
+    
 
 }
 
@@ -497,18 +499,28 @@ img {
 
 .foot-sub-form {
     display: flex;
+    gap: 24px;
+   
 }
 
+.sub-label {
+
+}
 .foot-mail-input {
-    min-width: 264px;
+    width: 264px;
     height: 40px;
     border: 1px solid #FFFFFF;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
     color: var(--whitty-color);
     padding-left: 16px;
-    margin-right: 24px;
+    
+    
+
 }
 
 .foot-mail-input::placeholder {
@@ -520,9 +532,12 @@ img {
 
 .foot-sub-svg {
     fill: var(--whitty-color);
+    margin-left: 16px;
+    
 }
 
 .foot-sub-btn {
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
     min-width: 165px;
     height: 40px;
@@ -533,13 +548,10 @@ img {
     background-color: var(--simple-color);
     border-radius: 4px;
     border: none;
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     transition: background-color var(--trans);
-
 }
 
 .foot-sub-btn:hover,
@@ -832,7 +844,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--gray-color);
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
 
 }
@@ -865,23 +877,27 @@ img {
     min-width: 169px;
     height: 56px;
     display: block;
-    margin: 24px auto 0;
-    background: #4D5AE5;
+    margin: 0 auto;     background: #4D5AE5;
     border: none;
     border-radius: 4px;
     outline: transparent;
     color: var(--whitty-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: color var(--trans), background-color var(--trans), border-color var(--trans);
+    transition: background-color
+    var(--trans);
 
 }
 
-.modal-send-btn:is(:hover, focus) {
+.modal-send-btn:is(:hover, :focus) {
     background-color: var(--active-color);
 }
 
 .comment {
     width: 100%;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 120px;
@@ -890,6 +906,7 @@ img {
     resize: none;
     transition: border-color var(--trans);
     display: block;
+    padding: 8px 16px;
 }
 
 .comment-input-div {
@@ -919,8 +936,7 @@ img {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: var(--gray-color);
-    display: inline-flex;
-    align-items: center;
+    
 }
 
 .check-txt span {
@@ -929,22 +945,28 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
+    line-height: 1.17;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: backroun-color var(--trans), border-color var(--trans), fill var(--trans);
+    transition: background-color var(--trans), border var(--trans), fill var(--trans);
 
 }
 
-.check:checked+.check-txt span {
+.check:checked + .check-txt > .check-span {
     background-color: var(--simple-color);
     border: none;
     fill: var(--darwhit-color);
 }
 
-.check:focus+.check-txt {
+.check:focus + .check-txt {
     border-color: var(--simple-color);
 }
 
-.check {}
+.check-input-div {
+  margin-bottom: 24px;
+}
+.check-span {
+
+}
